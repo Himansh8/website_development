@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(221, 181, 188); */
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background: skyblue; */
+}
+#right{
+    /* display: flex; */
+    width: 60%;
+    height: 100%;
+    /* background: blue; */
+}
+
+#rtop{
+    width: 100%;
+    height: 50%;
+    /* background: yellow; */
+    display: flex;
+}
+#rbelow{
+    width: 100%;
+    height: 50%;
+    /* background: yellowgreen; */
+    background-image: url(https://media.istockphoto.com/id/1449563540/photo/puzzle-head-with-jigsaw-puzzle.jpg?s=1024x1024&w=is&k=20&c=4WHobePw146fVZhvqqNRbm1xlt9pSqsEs2cCeBl9C8A=);
+    background-position: center;
+    background-size: cover;
+}
+
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    /* background: orange; */
+    background-image: url(https://media.istockphoto.com/id/1351746589/photo/orange-fruit-slices-citrus-arrangement-full-frame-background.jpg?s=1024x1024&w=is&k=20&c=n8eXMbZDkUmioHY6JHIjiKfaG-QpvXV9zj6PEMBN75w=);
+    background-position: center;
+    background-size:cover;
+}
+
+#rtopright{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+     background-position: center;
+    block-size:cover;
+
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+#lnav i{
+    color: black;
+    /* size: 2000px; */
+    font-size: 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#left #textr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#textr h1{
+    font-size: 120px;
+}
+
+#textr p{
+    font-size: 20px;
+    color: brown;
+    opacity: .6;
+    font-weight: 500px;
+    font-style: italic;
+}
+
+#textr a{
+    /* opacity: .6; */
+    font-size: 15px;
+    font-weight: 900px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+    font-style: bold;
+}
+@media(max-width: 800px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}

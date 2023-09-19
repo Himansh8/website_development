@@ -1,0 +1,28 @@
+#box{
+    width: 400px;
+    height: 400px;
+    background: #c7dce4;
+    overflow: hidden;
+    border: 2px solid black;
+    /* display: flex; */
+   
+}
+#box img{
+    /* margin: 100px 100px; */
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    transition: all ease 1s;
+    /* justify-content: center; */
+    /* align-items: center; */
+   
+}
+#box:hover img{
+    scale: 1.2;
+    /* box-shadow: 5px 5px 0px;
+    color: black; */
+}
+#box:hover{
+    box-shadow: 10px 10px 20px;
+    color: black;
+}
